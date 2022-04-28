@@ -1,0 +1,963 @@
+/* Estilos generales aplicados al body*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1em;
+    background-color: #FDF6F0;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Inicio estilos Header */
+
+.main-wrapper{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    /* overflow: hidden; */
+}
+
+.header-container-title{
+    display: inline-block;
+    align-self: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.8em;
+    color:  #C65D7B;
+}
+
+.header-container{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F8E2CF;
+    border-bottom: solid 1px rgb(238, 209, 209) ;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-right: 10px;
+    padding: 0;
+}
+
+nav ul li{
+    display: block;
+    margin-top: 0.7em;
+    padding: 0.5em 1.2em 0.5em 1.2em;
+    font-size: 1.5em;
+    color: #dd795a;
+    font-weight: 500;
+}
+
+nav ul li:hover a{
+    color: #FCD8D4;
+}
+
+nav ul li:hover{
+    background: #dd795a;
+
+}
+
+/*Media queries del Header*/
+
+
+@media screen and (min-width: 768px) {
+    .header-container-title{
+        padding-left: 1em;
+    }
+    
+    .header-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        
+    }
+    
+    nav ul{
+        margin-right: 10px;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        padding: 0.5em 0.8em 0.5em 0.8em;
+        font-size: 1.3em;
+    }
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+    .header-container-title{
+        padding-left: 3.5em;
+    }
+    
+    .header-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+    nav ul{
+        margin-right: 5vw;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        padding: 0.5em 1.2em 0.5em 1.2em;
+        font-size: 1.5em;
+    }
+    
+
+}
+
+/* Inicio estilos de index.html*/
+
+#main-content{
+    grid-area: main;
+}
+
+/*Seccion 1*/
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 2em 2em 2em 2em;
+}
+
+.container-data{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.container-data h2{
+    font-size: 2em;
+    font-weight: 500;
+    color: rgb(219, 130, 120);
+    text-align: center;
+}
+
+.container-data p{
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: justify;
+    word-spacing: 1px;
+}
+
+.container-data button{
+    width: 200px;
+    padding: 1em;
+    margin-top:2em;
+    font-size: 1.1em;
+    align-self: center;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #C65D7B;
+    color: white;
+}
+
+.container-data button:hover{
+    box-shadow:0px 0px 5px 3px #db8278 ;
+}
+
+
+.container-img{
+    display: flex;
+    justify-content: center;
+}
+
+.container-img img{
+    border-radius:20px 20px 20px 20px;
+    box-shadow: 2px 2px 3px;
+    width: 80vw;
+}
+
+/*Seccion 1 Media Queries*/
+
+@media screen and (min-width: 1024px){
+    .container{
+        flex-direction: row-reverse;
+        margin: 7em 3em 10em 3em;
+        
+    }
+    
+    .container-data{
+        margin-left: 1em;
+    
+    }
+    
+    .container-data h2{
+        font-size: 3.1em;
+    }
+    
+    .container-data p{
+        font-size: 1.5em;
+    }
+    
+    .container-data button{
+        margin-top:4em;
+    }
+    
+    .container-img img{
+        border-radius:0px 50px 100px 50px;
+        width: 600px;
+        margin-right: 3em
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .container{
+        margin: 7em 10em 10em 10em;
+        
+    }
+    
+}
+
+/*Seccion 1 Fin Media Queries*/
+
+/*Seccion 2*/
+.product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    
+}
+
+.products-container-info{
+    width: 60vw;
+    height: auto;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.products-container-info h3{
+    font-size: 1.7em;
+    color: #C65D7B;
+}
+
+.products-container-info p{
+    font-size: 1.4em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.products-container-info img{
+    height: 60px;
+
+}
+
+/*Seccion 2 Media Queries*/
+@media screen and (min-width: 1024px){
+    .product-container{
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .products-container-info{
+        width: 20%;
+        height: 300px;
+        margin-bottom: 0;
+    }
+}
+
+/*Seccion 2 Fin Media Queries*/
+
+/*Seccion 3*/
+
+.client-container{
+    margin: 0;
+    padding: 0;
+    background-color: #9FB4FF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.client-container h4{
+    align-self: center;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(12, 32, 49);
+}
+
+.client-container-info{
+    width: 250px;
+    
+}
+
+.client-container-info p {
+    font-size: 1em;
+    font-style: italic;
+}
+
+
+/*Seccion 3 Inicio Media Queries*/
+
+@media screen and (min-width: 768px){
+    .client-container{
+        height: 30vh;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .client-container h4{
+        align-self: center;
+        text-align: center;
+        width: 200px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    .client-container{
+        height: 30vh;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .client-container-info p {
+        font-size: 0.9em;
+        font-style: italic;
+    }
+    .client-container h4{
+        font-size: 2em;
+        align-self: flex-start;
+        text-align: left;
+        width: 550px;
+    }
+    .client-container-info{
+        width: 30%;
+        
+    }
+}
+
+/*Seccion 3 Fin Media Queries*/
+
+/*Seccion 4*/
+
+.price-container{
+    display: flex;
+    flex-direction: column;
+    margin: 5em;
+    
+}
+
+.price-container-data{
+    height: 350px;
+    background-color: #F8E2CF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px 50px 0 0;
+    overflow: hidden;
+    margin-top: 2.2em;
+}
+
+.price-container-data img{
+    width: 300px;
+    height: 210px;
+    overflow: hidden;
+    object-position: center;
+    background-position: center;
+    
+    
+}
+
+.price-container-data h3{
+    font-size: 1.5em;
+    color: #dd795a;
+}
+
+.price-container-data span{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/*Seccion 4 Inicio Media Queries*/
+
+@media screen and (min-width:400px){
+
+    .price-container{
+        align-items: center;
+    }
+    .price-container-data{
+        width: 265px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .price-container-data{
+        width: auto;
+    }
+    .price-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 1em 2em 2em 3em;
+    }
+    .price-container-data img{
+        width: 200px;
+    }
+
+
+}
+
+@media screen and (min-width:1024px){
+    .price-container{
+        margin: 4em 4em 8em 4em;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .price-container-data{
+        height: 450px;
+        width: auto;
+    }
+    
+    .price-container-data img{
+        width: 250px;
+        height: 300px;
+        
+    }
+}
+
+/*Seccion 4 Fin Media Queries*/
+
+/*Inicio Estilos Footer*/
+
+
+.footer-container{
+    grid-area: footer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8E2CF;
+}
+
+.footer-container h2{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.8em;
+    color:  #C65D7B;
+}
+
+.footer-networks{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer-network-info img{
+    width: 30px;
+    height: 30px;
+    margin: 1em 1em
+}
+
+/*Footer Media Queries*/
+
+@media screen and (min-width:1024px) {
+    .footer-network-info img{
+        margin: 1em 5em
+    }
+    
+}
+
+/*Fin Estilos Footer*/
+
+
+/*Inicio estilos sobre mi*/
+
+#about-me{
+    display: grid;
+    grid-template-areas: 
+    "about-me-img"
+    "about-me-description";
+    grid-template-rows: 300px 450px;
+}
+
+.about-me-container{
+    width: 300px;
+    margin: 2em auto 0 auto;
+    background-color: #dd9eb0;
+    height: 650px;
+    border-radius: 50px 50px 0 0;
+}
+
+.about-me-container img{
+    grid-area: about-me-img;
+    width: 300px;
+    border-radius: 50px 50px 0 0;
+}
+
+.about-me-container-data{
+    grid-area: about-me-description;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-me-container-data p{
+    font-size: 1.2em;
+    margin: 1em;
+    color:#fff;
+    font-style: italic;
+}
+
+.about-me-container-data h2{
+    font-size: 1.8em;
+    color: #b32d53;
+    font-weight: 500;
+}
+
+/*Inicio Media Queries Sobre mi*/
+
+@media screen and (min-width: 768px){
+    .about-me-container{
+        width: 400px;
+    }
+    
+    .about-me-container img{
+        width: 400px;
+    }
+    .about-me-container-data p{
+        font-size: 1.3em;
+        
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #about-me{
+        grid-template-rows: 300px 400px;
+    }
+    .about-me-container{
+        height: 60vh;
+        width: 90vw;
+        margin: 5em auto 6em auto;
+        border-radius: 50px;
+        display: flex;
+    }
+    
+    .about-me-container img{
+        width: 60%;
+        height: 100%;
+        border-radius: 50px 0 0 50px;
+    }
+    
+    .about-me-container-data{
+        margin-top: 1em;
+    }
+    
+    .about-me-container-data p{
+        font-size: 1.4em;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+
+    .about-me-container{
+        width: 80vw;
+        margin: 5em auto;
+    }
+    
+    .about-me-container img{
+        width: 70%;
+    }
+    
+
+    .about-me-container-data{
+        margin-top: 2em;
+    }
+    .about-me-container-data p{
+        font-size: 1.5em;
+    }
+    
+}
+
+/*Fin Media Queries Sobre mi*/
+
+
+/*Fin estilos sobre mi*/
+
+/*Inicio estilos mis productos*/
+
+/*Carrusel*/
+.carousel{
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slides{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    display: flex;
+    margin: 1em 0 0 0;
+}
+
+.slides::-webkit-scrollbar {
+    display: none;
+  }
+
+.slides-item{
+    display: flex;
+    flex-shrink: 0;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    margin: 0em;
+    width: 350px;
+    scroll-snap-align: start;
+}
+
+.slides-item img{
+    height: 100%;
+    width: 350px;
+    object-fit: cover;
+}
+
+.carousel-nav{
+    padding: 1.25em 0.5em;
+    margin-bottom: 2em;
+}
+
+.slider-nav{
+    align-items: center;
+    background-color: #C65D7B;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    height: 1.5em;
+    justify-content: center;
+    padding: 0.5em;
+    position: relative;
+    width: 1.5em;
+}
+
+.slider-nav:hover,.slider-nav:active{
+    background-color: #000;
+    color:#fff;
+}
+
+
+.galery-title{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+    color: #b32d53;
+}
+
+
+@media screen and (min-width:375px) {
+    .slides{
+
+        margin: 1em 2em;
+    }
+    .slides-item img{
+        width: 425px;
+    }
+    .slides-item{
+        margin: 0 3em;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+
+    .slides-item img{
+        width: 100%;
+    }
+    .slides-item{
+        width: 80vw;
+        margin: 0 6em 0 0;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .slides{
+        margin: 1em 0 0 2em;
+    }
+    
+    
+    .slides-item{
+        margin: 0 1em;
+        width: 100%;
+    }
+    
+    .slides-item img{
+        width: auto;
+    }
+    
+    
+    .galery-title{
+        font-size: 2.5em;
+    }
+}
+
+/*Fin estilo de productos*/
+
+/*Inicio Estilos Ferias*/
+
+.ferias-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3em 5em 5em 5em;
+}
+
+.card-feria{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 500px;
+    margin-bottom: 1.8em;
+
+    border-radius: 18px;
+    background-color: #fcb9b1;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card-feria-text{
+    margin: 1em;
+    height: 100%;
+}
+
+.card-feria-text p{
+    font-weight: 300;
+    font-style: italic;
+    color: #383737;
+    margin: 0.7em;
+}
+
+.card-feria-text h3{
+    font-size: 1.3em;
+    color: #b32d53;
+    margin: 0;
+}
+
+
+.card-feria-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #7783ee;
+    color: rgb(255, 255, 255);
+    height: 45px;
+    border-radius:  0 0 18px 18px;
+    font-weight: 500;
+
+}
+
+.card-feria:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.feria1,.feria2,.feria3{
+    height: 300px;
+    background-size: cover;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.feria1{
+    background-image: url(../public/img/feria1.jpg);
+
+}
+
+.feria2{
+    background-image: url(../public/img/feria2.jpg);
+
+}
+
+.feria3{
+    background-image: url(../public/img/feria3.jpg);
+
+}
+#ferias h2{
+    text-align: center;
+    font-size: 1.6em;
+    color: #b32d53;
+}
+
+
+/*Inicio Media Queries Ferias*/
+
+@media screen and (min-width: 400px) {
+    .card-feria{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .ferias-container{
+        margin: 3em 5em 3em 5em;
+    }
+    
+    
+    .card-feria-text{
+        margin: 1.2em;
+        height: auto;
+    }
+    
+    .card-feria-text p{
+        margin: 1em;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #ferias h2{
+        font-size: 2em;
+    }
+    .feria1,.feria2,.feria3{
+        height: 200px;
+
+    }
+
+    .card-feria-text h3{
+        font-size: 1.5em;
+    }
+    .card-feria-text p{
+        margin: 1em;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .card-feria{
+        width: 300px;
+    } 
+    
+}
+/*Fin Media Queries Ferias*/
+
+/*Fin estilos ferias*/
+
+/*Inicio estilos contacto*/
+
+.contact-wrapper{
+    display: grid;
+    grid-template-areas:
+    "title-contact"
+    "form-contact";
+    grid-template-rows: 100px auto;
+}
+
+.form-title{
+    grid-area: title-contact;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1.3em 0 0 0 ;
+    color: #b32d53;
+}
+
+.form-container{
+    grid-area: form-contact;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    
+    width: 280px;
+    margin: 5em auto;
+    background-color: #dd9eb0;
+    border-radius: 18px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.9);
+}
+
+.form-field{
+    margin: 1.2em;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-field label{
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.form-field input, .form-field textarea{
+    width: 100%;
+    resize: none;
+}
+
+form button{
+    text-align: center;
+    margin: 1em;
+    position: relative;
+    left: 30%;
+
+    background-color: #b32d53;
+    color: #FFF;
+    padding: 1em;
+    border-style: none;
+    border-radius: 18px;
+}
+
+form button:hover{
+    color: #000;
+    background-color: rgb(255, 104, 217);
+    cursor: pointer;
+}
+
+/*Inicio Contacto Media Queries*/
+
+@media screen and (min-width: 768px){
+    .form-title{
+        font-size: 3em;
+    }
+
+    .form-container{
+        width: 550px;
+        flex-direction: row;
+    }
+    
+    .form-field{
+        margin: 2em;
+        width: 450px;
+        font-size: 1.2em;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .form-field label{
+        margin-bottom: 0;
+    }
+    
+    .form-field input, .form-field textarea{
+        width: 300px;
+    }
+    
+    form button{
+        left: 40%;
+
+    }
+    
+    
+}
+
+/*Fin estilos contacto*/

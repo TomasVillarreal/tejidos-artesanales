@@ -954,6 +954,10 @@ form button:hover{
     .form-container{
         width: 550px;
         flex-direction: row;
+
+        animation-name: from-left;
+        animation-timing-function: ease;
+        animation-duration: 2s;
     }
     
     .form-field{
@@ -978,6 +982,17 @@ form button:hover{
     }
     
     
+}
+
+/*Animacion Contacto*/
+
+@keyframes from-left {
+    0%{
+        transform: translateX(-2000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 
 /*Fin estilos contacto*/

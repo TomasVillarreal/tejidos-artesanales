@@ -493,6 +493,10 @@ nav ul li:hover{
     background-color: #dd9eb0;
     height: 650px;
     border-radius: 50px 50px 0 0;
+
+    animation-name: fade-in;
+    animation-timing-function: ease;
+    animation-duration: 1s;
 }
 
 .about-me-container img{
@@ -571,6 +575,7 @@ nav ul li:hover{
 
     .about-me-container{
         width: 80vw;
+        height: 500px;
         margin: 5em auto;
     }
     
@@ -581,6 +586,8 @@ nav ul li:hover{
 
     .about-me-container-data{
         margin-top: 2em;
+        height: 100%;
+
     }
     .about-me-container-data p{
         font-size: 1.5em;
@@ -590,6 +597,19 @@ nav ul li:hover{
 
 /*Fin Media Queries Sobre mi*/
 
+/*Animacion Sobre Mi*/
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /*Fin estilos sobre mi*/
 

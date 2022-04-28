@@ -31,7 +31,7 @@ a{
     align-self: center;
     font-family: 'Shadows Into Light', cursive;
     font-size: 2.8em;
-    color:  #C65D7B;
+    color:  #1b6105;
 }
 
 .header-container{
@@ -39,7 +39,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #F8E2CF;
+    background-color: #96eeb1;
     border-bottom: solid 1px rgb(238, 209, 209) ;
 }
 
@@ -54,16 +54,16 @@ nav ul li{
     margin-top: 0.7em;
     padding: 0.5em 1.2em 0.5em 1.2em;
     font-size: 1.5em;
-    color: #dd795a;
+    color: #052c11;
     font-weight: 500;
 }
 
 nav ul li:hover a{
-    color: #FCD8D4;
+    color: #96eeb1;
 }
 
 nav ul li:hover{
-    background: #dd795a;
+    background: #052c11
 
 }
 
@@ -141,7 +141,7 @@ nav ul li:hover{
 .container-data h2{
     font-size: 2em;
     font-weight: 500;
-    color: rgb(219, 130, 120);
+    color: rgb(46, 173, 74);
     text-align: center;
 }
 
@@ -160,12 +160,12 @@ nav ul li:hover{
     align-self: center;
     border-radius: 5px;
     border-style: none;
-    background-color: #C65D7B;
-    color: white;
+    background-color: #93f35c;
+    color: rgb(0, 0, 0);
 }
 
 .container-data button:hover{
-    box-shadow:0px 0px 5px 3px #db8278 ;
+    box-shadow:0px 0px 5px 3px #148a1e ;
 }
 
 

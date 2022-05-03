@@ -30,24 +30,48 @@ a{
     display: inline-block;
     align-self: center;
     font-family: 'Shadows Into Light', cursive;
-    font-size: 2.8em;
+    font-size: 2.3em;
     font-weight: 700;
+    color:  #C65D7B;
+    margin: 0.2rem 0 0 0.2rem;
+}
+
+.header-container-title a:visited{
     color:  #C65D7B;
 }
 
-.header-container{
+/* .header-container{
     grid-area: header;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     background-color: #F8E2CF;
     border-bottom: solid 1px rgb(238, 209, 209) ;
+} */
+
+.navbar-brand{
+    color:  #C65D7B;
+}
+.navbar{
+    background-color: #F8E2CF;
+    border-bottom: solid 1px rgb(238, 209, 209) ;
+}
+
+.navbar-toggler{
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navicon{
+    color: #C65D7B;
 }
 
 nav ul{
     list-style-type: none;
-    margin-top: 1em;
-    margin-right: 10px;
     padding: 0;
 }
 
@@ -74,50 +98,49 @@ nav ul li:hover{
 
 @media screen and (min-width: 768px) {
     .header-container-title{
+        font-size: 2.8em;
         padding-left: 1em;
     }
-    
-    .header-container{
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-        
+
+    .navbar-toggler{
+        font-size: 1.8rem;
+        margin-top: 0.8rem;
     }
-    
-    nav ul{
-        margin-right: 10px;
-    }
-    
-    nav ul li{
-        display: inline-block;
-        padding: 0.5em 0.8em 0.5em 0.8em;
-        font-size: 1.3em;
-    }
-    
 
 }
 
-@media screen and (min-width: 1024px) {
-    .header-container-title{
-        padding-left: 3.5em;
-    }
-    
-    .header-container{
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-    }
-    nav ul{
-        margin-right: 5vw;
-    }
-    
+@media screen and (min-width: 992px) {
+
     nav ul li{
         display: inline-block;
         padding: 0.5em 1.2em 0.5em 1.2em;
+        font-size: 1.2em;
+    }
+    .nav-item{
+        display: inline-block;
+        height: 100%;
+    }
+    #navegador{
+        justify-content: flex-end;
+    }
+    .header-container-title{
+        font-size: 2.8em;
+        padding-left: 1em;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    nav ul li{
         font-size: 1.5em;
     }
-    
-
+    #navegador{
+        margin-right: 5em; 
+        
+    }
+    .header-container-title{
+        padding-left: 3.5em;
+    }
 }
 
 /* Inicio estilos de index.html*/
@@ -624,30 +647,6 @@ nav ul li:hover{
 #carrusel{
     margin-bottom: 2em;
 }
-
-/* #carrusel{
-    height: 95vh;
-}
-
-
-.carousel-item img{
-    height: vh;
-    align-self: center;
-    justify-self: center;
-    object-fit: contain;
-}
-
-.carousel-control-next{
-    right:0;
-}
-
-.carousel-control-prev{
-    left: 0;
-}
-
-.carousel-indicators{
-    bottom: 100px;
-} */
 
 .galery-title{
     text-align: center;

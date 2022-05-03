@@ -495,24 +495,31 @@ nav ul li:hover{
 
 /*Inicio estilos sobre mi*/
 
-#about-me{
-    display: grid;
-    grid-template-areas: 
-    "about-me-img"
-    "about-me-description";
-    grid-template-rows: 300px 450px;
-}
-
-.about-me-container{
-    width: 300px;
-    margin: 2em auto 0 auto;
+.card{
     background-color: #dd9eb0;
-    height: 650px;
-    border-radius: 50px 50px 0 0;
 
     animation-name: fade-in;
     animation-timing-function: ease;
     animation-duration: 1s;
+}
+
+.card-title{
+    font-size: 1.8em;
+    color: #b32d53;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card-text{
+    font-size: 1.2em;
+    margin: 1em;
+    color:#fff;
+    font-style: italic;
+}
+
+.img-fluid {
+    height: 100%;
+    object-fit: cover;
 }
 
 .about-me-container img{
@@ -521,95 +528,26 @@ nav ul li:hover{
     border-radius: 50px 50px 0 0;
 }
 
-.about-me-container-data{
-    grid-area: about-me-description;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.about-me-container-data p{
-    font-size: 1.2em;
-    margin: 1em;
-    color:#fff;
-    font-style: italic;
-}
-
-.about-me-container-data h2{
-    font-size: 1.8em;
-    color: #b32d53;
-    font-weight: 500;
-}
-
 /*Inicio Media Queries Sobre mi*/
 
-@media screen and (min-width: 768px){
-    .about-me-container{
-        width: 400px;
-    }
-    
-    .about-me-container img{
-        width: 400px;
-    }
-    .about-me-container-data p{
-        font-size: 1.3em;
-        
-    }
-}
 
-@media screen and (min-width: 1024px){
-    #about-me{
-        grid-template-rows: 300px 400px;
-    }
-    .about-me-container{
-        height: 60vh;
-        width: 90vw;
-        margin: 5em auto 6em auto;
-        border-radius: 50px;
-        display: flex;
-    }
+@media screen and (min-width: 992px){
     
-    .about-me-container img{
-        width: 60%;
-        height: 100%;
-        border-radius: 50px 0 0 50px;
-    }
-    
-    .about-me-container-data{
-        margin-top: 1em;
-    }
-    
-    .about-me-container-data p{
+    .center{
+        margin: 10em auto;
+    } 
+    .card-text{
         font-size: 1.4em;
     }
 
 }
 
-@media screen and (min-width: 1440px){
-
-    .about-me-container{
-        width: 80vw;
-        height: 500px;
-        margin: 5em auto;
-    }
-    
-    .about-me-container img{
-        width: 70%;
-    }
-    
-
-    .about-me-container-data{
-        margin-top: 2em;
-        height: 100%;
-
-    }
-    .about-me-container-data p{
+@media screen and (min-width: 1024px){
+    .card-text{
         font-size: 1.5em;
     }
-    
-}
+} 
+
 
 /*Fin Media Queries Sobre mi*/
 

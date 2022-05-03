@@ -6,28 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importacion de iconos font-awesome -->
+    <script src="https://kit.fontawesome.com/a039fbd5d2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- Importacion de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Archivo de reset -->
     <link rel="stylesheet" href="../css/normalize.css">
+    <!-- Hoja de estilos propia -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Irene Villarreal Tejidos - Sobre Mi</title>
 </head>
 <body>
     <!-- Inicio Header -->
     <header>
-        <div class="header-container">
-            <h1 class="header-container-title">
-                <a href="../index.html">Irene Villarreal</a>
-            </h1>
-            <nav class="header-container-nav">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="sobre-mi.html">Sobre mi</a></li>
-                    <li><a href="productos.html">Mis Productos</a></li>
-                    <li><a href="ferias.html">Ferias</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                    <h1 class="navbar-brand header-container-title">
+                        <a href="../index.html">Irene Villarreal</a>
+                    </h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegador" aria-controls="navegador" aria-expanded="true" aria-label="navegar">
+                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars navicon"></i></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navegador" style>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                            <li class="nav-item "><a href="sobre-mi.html">Sobre mi</a></li>
+                            <li class="nav-item "><a href="productos.html">Mis Productos</a></li>
+                            <li class="nav-item"><a href="ferias.html">Ferias</a></li>
+                            <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Fin Header -->
@@ -35,42 +46,51 @@
     <!-- Inicio Contenido Principal  -->
 
     <main>
-        <article id="about-me">
-            <div class="about-me-container">
-                <img src="../public/img/sobre-mi.jpg" alt="Puesto en la feria de peluches">
-                <div class="about-me-container-data">
-                    <h2>
-                        Irene Villarreal - Tejidos Artesanales
-                    </h2>
-                    <p> Me presento, mi nombre es Irene Villarreal, tengo 67 años y soy de la provincia de Catamarca Argentina. Desde pequeña mi hobby fue tejer y coser, pero me dedique profesionalmente a la medicina, pero luego de jubilarme decidí dedicarme a la elaboracion y venta de tejidos, muñecos, peluches, abrigos, nuigurumis, entre otras cosas.</p>
+        <div class="container center">
+            <div class="card mb-5 mt-5">
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded-start" src="../public/img/sobre-mi.jpg" alt="Puesto en la feria de peluches">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card-body p-lg-4">
+                            <h2 class="card-title">
+                                Irene Villarreal - Tejidos Artesanales
+                            </h2>
+                            <p class="card-text"> Me presento, mi nombre es Irene Villarreal, tengo 67 años y soy de la provincia de Catamarca Argentina. Desde pequeña mi hobby fue tejer y coser, pero me dedique profesionalmente a la medicina, pero luego de jubilarme decidí dedicarme a la elaboracion y venta de tejidos, muñecos, peluches, abrigos, nuigurumis, entre otras cosas.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </article>
+        </div>
     </main>
 
     <!-- Fin contenido principal -->
 
     <!-- Inicio footer -->
-    
 
     <footer>
-        <div class="footer-container">
-            <h2>
-                Irene Villarreal
-            </h2>
-            <div class="footer-networks">
-                <div class="footer-network-info">
-                    <a href="https://www.facebook.com/Irene-Villarreal-Tejidos-125108655808115" target="_blank">
+        <div class="container-fluid footer-container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col d-flex align-items-center justify-content-center">
+                    <h2>
+                        Irene Villarreal
+                    </h2>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-4 col-lg-2 footer-network-info d-flex justify-content-center">
+                    <a href="https://www.facebook.com/Irene-Villarreal-Tejidos-125108655808115">
                         <img src="../public/img/facebook-f-brands.svg" alt="Facebook logo">
                     </a>
                 </div>
-                <div class="footer-network-info">
-                    <a href="" target="_blank">
+                <div class="col-4 col-lg-2 footer-network-info d-flex justify-content-center">
+                    <a href="">
                         <img src="../public/img/instagram-brands.svg" alt="Instagram logo">
                     </a>
                 </div>
-                <div class="footer-network-info">
-                    <a href="https://wa.me/5493834211988" target="_blank">
+                <div class="col-4 col-lg-2 footer-network-info d-flex justify-content-center">
+                    <a href="https://wa.me/5493834211988">
                         <img src="../public/img/whatsapp-brands.svg" alt="WhatsApp logo">
                     </a>
                 </div>
@@ -80,6 +100,7 @@
     </footer>
 
     <!-- Fin Footer -->
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

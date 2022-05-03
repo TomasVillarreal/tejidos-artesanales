@@ -464,11 +464,6 @@ nav ul li:hover{
 
 
 .footer-container{
-    grid-area: footer;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #F8E2CF;
 }
 
@@ -478,12 +473,6 @@ nav ul li:hover{
     font-size: 2.8em;
     margin: 1em 0 1em 0;
     color:  #C65D7B;
-}
-
-.footer-networks{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
 }
 
 .footer-network-info img{

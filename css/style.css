@@ -607,22 +607,11 @@ nav ul li:hover{
 /*Fin estilo de productos*/
 
 /*Inicio Estilos Ferias*/
-
-.ferias-container{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 3em 5em 5em 5em;
+#ferias{
+    margin: 0;
 }
 
 .card-feria{
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    height: 500px;
-    margin-bottom: 1.8em;
-
     border-radius: 18px;
     background-color: #fcb9b1;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
@@ -630,24 +619,22 @@ nav ul li:hover{
 
     transition: 0.5s ease;
     cursor: pointer;
+    border: 0;
+    margin: 0;
 }
 
 .card-feria-text{
-    margin: 1em;
-    height: 100%;
-}
-
-.card-feria-text p{
     font-weight: 300;
     font-style: italic;
     color: #383737;
     margin: 0.7em;
 }
 
-.card-feria-text h3{
+.card-feria-title{
     font-size: 1.3em;
     color: #b32d53;
-    margin: 0;
+    margin: 0.2em;
+    font-weight: 600;
 }
 
 
@@ -665,7 +652,7 @@ nav ul li:hover{
 }
 
 .card-feria:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
@@ -689,50 +676,33 @@ nav ul li:hover{
     background-image: url(../public/img/feria3.jpg);
 
 }
-#ferias h2{
+.feria-title{
     text-align: center;
     font-size: 1.6em;
     color: #b32d53;
+    font-weight: 600;
+    margin: 1em 0;
 }
 
 
 /*Inicio Media Queries Ferias*/
 
-@media screen and (min-width: 400px) {
-    .card-feria{
-        height: 450px;
-    }
-}
-
 @media screen and (min-width: 425px) {
-    .ferias-container{
-        margin: 3em 5em 3em 5em;
-    }
-    
     
     .card-feria-text{
-        margin: 1.2em;
-        height: auto;
-    }
-    
-    .card-feria-text p{
         margin: 1em;
     }
 }
 
 @media screen and (min-width: 768px){
-    #ferias h2{
+    .feria-title{
         font-size: 2em;
     }
-    .feria1,.feria2,.feria3{
-        height: 200px;
 
-    }
-
-    .card-feria-text h3{
+    .card-feria-title{
         font-size: 1.5em;
     }
-    .card-feria-text p{
+    .card-feria-text{
         margin: 1em;
     }
 
@@ -740,10 +710,29 @@ nav ul li:hover{
 
 @media screen and (min-width: 1024px){
     .card-feria{
-        width: 300px;
+        width: 275px;
+        height: 100%;
     } 
+    #ferias{
+        margin: 3em auto 3em auto;
+    }
     
 }
+
+@media screen and (min-width: 1440px){
+    .card-feria{
+        width: 400px;
+        height: 600px;
+        margin-left: 3em !important;
+    } 
+}
+
+@media screen and (min-width: 1800px){
+    .card-feria{
+        margin-left: 6em !important;
+    } 
+}
+
 /*Fin Media Queries Ferias*/
 
 /*Fin estilos ferias*/

@@ -764,74 +764,50 @@ nav ul li:hover{
 
 /*Inicio estilos contacto*/
 
-.contact-wrapper{
-    display: grid;
-    grid-template-areas:
-    "title-contact"
-    "form-contact";
-    grid-template-rows: 100px auto;
+.form-control{
+    font-size: 1.2em;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+textarea{
+    resize: none;
+}
+
+.form-label{
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0.5em 0 0.5em 0;
+    padding-top: 1em;
 }
 
 .form-title{
-    grid-area: title-contact;
     text-align: center;
     font-size: 2.5em;
-    margin: 1.3em 0 0 0 ;
+    font-weight: 600;
+    margin: 1.3em 0 1.3em 0 ;
     color: #b32d53;
 }
 
 .form-container{
-    grid-area: form-contact;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2em;
-    
     width: 280px;
-    margin: 5em auto;
+    margin: 1em auto 8em auto;
     background-color: #dd9eb0;
     border-radius: 18px;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.9);
 }
 
-.form-field{
-    margin: 1.2em;
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.form-field label{
-    color: #fff;
-    margin-bottom: 0.5em;
-}
-
-.form-field input, .form-field textarea{
-    width: 100%;
-    resize: none;
-}
-
-form button{
+.btn-contact{
     text-align: center;
     margin: 1em;
-    position: relative;
-    left: 30%;
 
     background-color: #b32d53;
     color: #FFF;
-    padding: 1em;
+    padding: 0.7em 2em 0.7em 2em;
     border-style: none;
     border-radius: 18px;
 }
 
-form button:hover{
-    color: #000;
-    background-color: rgb(255, 104, 217);
-    cursor: pointer;
-}
 
 /*Inicio Contacto Media Queries*/
 
@@ -842,36 +818,30 @@ form button:hover{
 
     .form-container{
         width: 550px;
-        flex-direction: row;
 
         animation-name: from-left;
         animation-timing-function: ease;
         animation-duration: 2s;
     }
-    
-    .form-field{
-        margin: 2em;
-        width: 450px;
-        font-size: 1.2em;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .form-field label{
-        margin-bottom: 0;
-    }
-    
-    .form-field input, .form-field textarea{
-        width: 300px;
-    }
-    
-    form button{
-        left: 40%;
 
+    .form-control{
+        font-size: 1.2em;
+        width: 100%;
+        margin: 0 auto 0 auto;
     }
-    
+
     
 }
+
+@media screen and (min-width: 1440px){
+    
+.form-container{
+    width: 700px;
+
+}
+
+}
+
 
 /*Animacion Contacto*/
 

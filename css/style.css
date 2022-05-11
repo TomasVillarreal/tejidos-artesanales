@@ -392,6 +392,8 @@ nav ul li:hover{
 
 .card-pricing{
     background-color: #F8E2CF;
+    transition: 0.5s ease;
+    cursor: pointer;
 }
 
 .card-pricing-title{
@@ -655,7 +657,7 @@ nav ul li:hover{
 
 }
 
-.card-feria:hover{
+.card-feria:hover, .card-pricing:hover{
     transform: scale(1.05);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }

@@ -1,0 +1,76 @@
+
+
+/*Inicio estilos sobre mi*/
+
+.card-bg{
+    background-color: $color-contenedor;
+
+    animation-name: fade-in;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+}
+
+.card-title-bg{
+    font-size: 1.8em;
+    color: $color-titulos;
+    font-weight: 500;
+    text-align: center;
+}
+.card-text-bg{
+    font-size: 1.2em;
+    margin: 1em;
+    color:#fff;
+    font-style: italic;
+}
+
+
+.img-fluid {
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-me-container{
+    img{
+        width: 300px;
+        border-radius: 50px 50px 0 0;
+    }
+}
+
+/*Inicio Media Queries Sobre mi*/
+
+
+@media screen and (min-width: 992px){
+    
+    .center{
+        margin: 10em auto;
+    } 
+    .card-text-bg{
+        font-size: 1.4em;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .card-text-bg{
+        font-size: 1.5em;
+    }
+} 
+
+
+/*Fin Media Queries Sobre mi*/
+
+/*Animacion Sobre Mi*/
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Fin estilos sobre mi*/

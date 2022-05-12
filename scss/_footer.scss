@@ -1,0 +1,35 @@
+/*Inicio Estilos Footer*/
+
+
+.footer-container{
+    background-color: $color-fondo-navegacion;
+    grid-area: footer;
+    h2{
+        font-family: 'Shadows Into Light', cursive;
+        font-weight: 700;
+        font-size: 2.8em;
+        margin: 1em 0 1em 0;
+        color:  $color-fuerte;
+    }
+}
+
+.footer-network-info{
+    img{
+        width: 30px;
+        height: 30px;
+        margin: 1em 1em;
+    }
+}
+
+/*Footer Media Queries*/
+
+@media screen and (min-width:1024px) {
+    .footer-network-info{
+        img {
+            margin: 1em 5em;
+        }
+    }
+    
+}
+
+/*Fin Estilos Footer*/

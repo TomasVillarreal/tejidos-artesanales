@@ -1,0 +1,130 @@
+/*Inicio Estilos Ferias*/
+#ferias{
+    margin: 0;
+}
+
+.card-feria{
+    border-radius: 18px;
+    background-color: #fcb9b1;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: 0;
+    margin: 0;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    }
+}
+
+.card-feria-text{
+    font-weight: 300;
+    font-style: italic;
+    color: #383737;
+    margin: 0.7em;
+}
+
+.card-feria-title{
+    font-size: 1.3em;
+    color: $color-titulos;
+    margin: 0.2em;
+    font-weight: 600;
+}
+
+
+.card-feria-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #7783ee;
+    color: rgb(255, 255, 255);
+    height: 45px;
+    border-radius:  0 0 18px 18px;
+    font-weight: 500;
+
+}
+
+
+.feria1,.feria2,.feria3{
+    height: 300px;
+    background-size: cover;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.feria1{
+    background-image: url(../public/img/feria1.jpg);
+
+}
+
+.feria2{
+    background-image: url(../public/img/feria2.jpg);
+
+}
+
+.feria3{
+    background-image: url(../public/img/feria3.jpg);
+
+}
+.feria-title{
+    text-align: center;
+    font-size: 1.6em;
+    color: $color-titulos;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+
+/*Inicio Media Queries Ferias*/
+
+@media screen and (min-width: 425px) {
+    
+    .card-feria-text{
+        margin: 1em;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .feria-title{
+        font-size: 2em;
+    }
+
+    .card-feria-title{
+        font-size: 1.5em;
+    }
+    .card-feria-text{
+        margin: 1em;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .card-feria{
+        width: 275px;
+        height: 100%;
+    } 
+    #ferias{
+        margin: 3em auto 3em auto;
+    }
+    
+}
+
+@media screen and (min-width: 1440px){
+    .card-feria{
+        width: 400px;
+        height: 600px;
+        margin-left: 3em !important;
+    } 
+}
+
+@media screen and (min-width: 1800px){
+    .card-feria{
+        margin-left: 6em !important;
+    } 
+}
+
+/*Fin Media Queries Ferias*/
+
+/*Fin estilos ferias*/

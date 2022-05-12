@@ -1,0 +1,55 @@
+
+/*Inicio estilos mis productos*/
+
+/*Carrusel*/
+
+#carrusel{
+    margin-bottom: 2em;
+}
+
+.galery-title{
+    text-align: center;
+    margin: 1.5em 0 1em 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: $color-titulos;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .carousel-item{
+        img{
+            height: 800px;
+            align-self: center;
+            justify-self: center;
+            object-fit: contain;
+        }
+    }
+    .carousel-control-next{
+        right:25px;
+    }
+    
+    .carousel-control-prev{
+        left: 25px;
+    }
+
+    .galery-title{
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width:990px) {
+
+
+    .carousel-control-next{
+        right:-1em;
+    }
+    
+    .carousel-control-prev{
+        left: -1em;
+    }
+
+}
+
+/*Fin estilo de productos*/

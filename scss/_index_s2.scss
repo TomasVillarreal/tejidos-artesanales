@@ -1,0 +1,46 @@
+/*Seccion 2*/
+.product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    
+}
+
+.products-container-info{
+    width: 60vw;
+    height: auto;
+    margin-bottom: 1.5em;
+    text-align: center;
+    h3{
+        font-size: 1.7em;
+        color: $color-fuerte;
+        margin: 1em;
+    }
+    p{
+        font-size: 1.4em;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1.15
+    }
+    img{
+        height: 60px;
+    }
+}
+
+/*Seccion 2 Media Queries*/
+@media screen and (min-width: 1024px){
+    .product-container{
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .products-container-info{
+        width: 20%;
+        height: 300px;
+        margin-bottom: 0;
+    }
+}
+
+/*Seccion 2 Fin Media Queries*/

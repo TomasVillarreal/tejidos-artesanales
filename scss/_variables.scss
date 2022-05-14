@@ -22,3 +22,11 @@ $pesos:(
         font-weight: $valor;
     }
 }
+
+// Extend
+
+.boton{
+    border-style: none;
+    border-radius: 18px;
+    text-align: center;
+}

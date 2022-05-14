@@ -1,3 +1,18 @@
+.peso-extra-liviano {
+  font-weight: 300; }
+
+.peso-liviano {
+  font-weight: 400; }
+
+.peso-medio {
+  font-weight: 500; }
+
+.peso-fuerte {
+  font-weight: 600; }
+
+.peso-negrita {
+  font-weight: 700; }
+
 /* Estilos generales aplicados al body*/
 body {
   margin: 0;
@@ -25,7 +40,6 @@ header {
   align-self: center;
   font-family: 'Shadows Into Light', cursive;
   font-size: 2.3em;
-  font-weight: 700;
   color: #C65D7B;
   margin: 0.2rem 0 0 0.2rem; }
 
@@ -56,8 +70,7 @@ nav ul {
     margin-top: 0.7em;
     padding: 0.5em 1.2em 0.5em 1.2em;
     font-size: 1.5em;
-    color: #dd795a;
-    font-weight: 500; }
+    color: #dd795a; }
     nav ul li:hover {
       background: #dd795a; }
 
@@ -109,14 +122,12 @@ nav ul li:hover a {
 
 .container-data h2 {
   font-size: 2em;
-  font-weight: 500;
   color: #db8278;
   text-align: center;
   margin: 1em; }
 
 .container-data p {
   font-size: 1.1em;
-  font-weight: 400;
   text-align: justify;
   word-spacing: 1px;
   line-height: 1.15; }
@@ -189,7 +200,6 @@ nav ul li:hover a {
     margin: 1em; }
   .products-container-info p {
     font-size: 1.4em;
-    font-weight: 300;
     font-style: italic;
     line-height: 1.15; }
   .products-container-info img {
@@ -276,12 +286,10 @@ nav ul li:hover a {
 
 .card-pricing-title {
   font-size: 1.5em;
-  color: #dd795a;
-  font-weight: 600; }
+  color: #dd795a; }
 
 .card-price {
-  font-size: 1.2em;
-  font-weight: 400; }
+  font-size: 1.2em; }
 
 /*Seccion 4 Inicio Media Queries*/
 @media screen and (min-width: 426px) and (max-width: 767px) {
@@ -343,7 +351,6 @@ nav ul li:hover a {
 .card-title-bg {
   font-size: 1.8em;
   color: #b32d53;
-  font-weight: 500;
   text-align: center; }
 
 .card-text-bg {
@@ -391,7 +398,6 @@ nav ul li:hover a {
   text-align: center;
   margin: 1.5em 0 1em 0;
   font-size: 2em;
-  font-weight: 700;
   color: #b32d53; }
 
 @media screen and (min-width: 768px) {
@@ -432,7 +438,6 @@ nav ul li:hover a {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); }
 
 .card-feria-text {
-  font-weight: 300;
   font-style: italic;
   color: #383737;
   margin: 0.7em; }
@@ -440,8 +445,7 @@ nav ul li:hover a {
 .card-feria-title {
   font-size: 1.3em;
   color: #b32d53;
-  margin: 0.2em;
-  font-weight: 600; }
+  margin: 0.2em; }
 
 .card-feria-data {
   display: flex;
@@ -450,8 +454,7 @@ nav ul li:hover a {
   background-color: #7783ee;
   color: white;
   height: 45px;
-  border-radius: 0 0 18px 18px;
-  font-weight: 500; }
+  border-radius: 0 0 18px 18px; }
 
 .feria1, .feria2, .feria3 {
   height: 300px;
@@ -471,7 +474,6 @@ nav ul li:hover a {
   text-align: center;
   font-size: 1.6em;
   color: #b32d53;
-  font-weight: 600;
   margin: 1em 0; }
 
 /*Inicio Media Queries Ferias*/
@@ -549,7 +551,6 @@ textarea {
 .form-title {
   text-align: center;
   font-size: 2.5em;
-  font-weight: 600;
   margin: 1.3em 0 1.3em 0;
   color: #b32d53; }
 

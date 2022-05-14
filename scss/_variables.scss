@@ -1,6 +1,24 @@
+// Variables
+
 $color-fuerte:#C65D7B;
 $color-fondo-navegacion: #F8E2CF;
 $color-acentuar: #dd795a;
 $color-bg: #FDF6F0;
 $color-titulos: #b32d53;
 $color-contenedor: #dd9eb0;
+
+// Mapa
+
+$pesos:(
+    extra-liviano:300,
+    liviano: 400,
+    medio: 500,
+    fuerte: 600,
+    negrita: 700,
+);
+
+@each $peso, $valor in $pesos{
+    .peso-#{$peso}{
+        font-weight: $valor;
+    }
+}

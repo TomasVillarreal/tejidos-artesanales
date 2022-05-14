@@ -1,7 +1,6 @@
 /*Seccion 2*/
 .product-container{
-    display: flex;
-    flex-direction: column;
+    @include displayF(column, nowrap);
     justify-content: center;
     align-items: center;
     margin-bottom: 3em;
@@ -31,7 +30,7 @@
 /*Seccion 2 Media Queries*/
 @media screen and (min-width: 1024px){
     .product-container{
-        flex-direction: row;
+        @include displayF(row, nowrap);
         justify-content: space-around;
         
     }

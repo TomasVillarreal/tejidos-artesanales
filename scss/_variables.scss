@@ -30,3 +30,11 @@ $pesos:(
     border-radius: 18px;
     text-align: center;
 }
+
+// Mixin
+
+@mixin displayF ($flex-direction, $flex-wrap){
+    display: flex;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+}

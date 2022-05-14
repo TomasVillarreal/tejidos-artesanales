@@ -5,8 +5,7 @@
     padding: 0;
     background-color: #9FB4FF;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    @include displayF(column, nowrap);
     align-items: center;
     h4{
         align-self: center;
@@ -36,7 +35,7 @@
 @media screen and (min-width: 768px){
     .client-container{
         height: 30vh;
-        flex-direction: row;
+        @include displayF(row, nowrap);
         justify-content: space-around;
         align-items: center;
         h4{
@@ -50,9 +49,6 @@
 
 @media screen and (min-width: 1024px){
     .client-container{
-        height: 30vh;
-        flex-direction: row;
-        justify-content: space-around;
         h4{
             font-size: 2em;
             align-self: flex-start;

@@ -6,15 +6,12 @@
 
 /*Seccion 1*/
 .contenedor{
-    display: flex;
-    flex-direction: column-reverse;
+    @include displayF(column-reverse, nowrap);
     margin: 2em 2em 2em 2em;
 }
 
 .container-data{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include displayF(column, wrap);
 
 }
 
@@ -53,7 +50,7 @@
 
 
 .container-img{
-    display: flex;
+    @include displayF(row, nowrap);
     justify-content: center;
     img{
         border-radius:20px 20px 20px 20px;
@@ -66,7 +63,7 @@
 
 @media screen and (min-width: 1024px){
     .contenedor{
-        flex-direction: row-reverse;
+        @include displayF(row-reverse, nowrap);
         margin: 7em 3em 10em 3em;
         
     }
@@ -97,7 +94,7 @@
 
 @media screen and (min-width: 1440px){
     .contenedor{
-        margin: 7em 10em 10em 10em;
+        margin: 7em 10em 5em 10em;
         
     }
     .container-img{

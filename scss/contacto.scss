@@ -25,8 +25,7 @@
 
 #contact-aside {
     grid-area: aside;
-    display: flex;
-    flex-direction: column;
+    @include displayF(column, nowrap);
     align-items: center;
     justify-content: center;
 

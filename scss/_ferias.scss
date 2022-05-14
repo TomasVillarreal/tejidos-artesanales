@@ -33,7 +33,7 @@
 
 
 .card-feria-data{
-    display: flex;
+    @include displayF(row, nowrap);
     justify-content: space-around;
     align-items: center;
 

@@ -267,19 +267,25 @@ nav ul li:hover a {
     .client-container h4 {
       align-self: center;
       text-align: center;
-      width: 200px; } }
+      width: 200px;
+      margin: auto; } }
 
 @media screen and (min-width: 1024px) {
   .client-container h4 {
     font-size: 2em;
     align-self: flex-start;
     text-align: left;
-    width: 550px; }
+    width: 550px;
+    margin-left: 1em; }
   .client-container-info {
     width: 30%; }
     .client-container-info p {
       font-size: 0.9em;
       font-style: italic; } }
+
+@media screen and (min-width: 1440px) {
+  .client-container h4 {
+    margin: auto; } }
 
 /*Seccion 3 Fin Media Queries*/
 /*Seccion 4*/

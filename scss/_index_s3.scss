@@ -3,7 +3,7 @@
 .client-container{
     margin: 0;
     padding: 0;
-    background-color: #9FB4FF;
+    background-color: #C65D7B  ;
     height: 100%;
     @include displayF(column, nowrap);
     align-items: center;
@@ -11,7 +11,7 @@
         align-self: center;
         text-align: center;
         font-size: 1.5em;
-        color: rgb(12, 32, 49);
+        color: rgb(255, 255, 255);
         margin: 1em;
     }
     h5{
@@ -24,6 +24,7 @@
 .client-container-info{
     width: 250px;
     p{
+        color: white;;
         font-size: 1em;
         font-style: italic;
         line-height: 1.15;

@@ -51,6 +51,9 @@ header {
 .header-container-title a:visited {
   color: #C65D7B; }
 
+.header-container-title a:hover {
+  color: #C65D7B; }
+
 .navbar-brand {
   color: #C65D7B; }
 
